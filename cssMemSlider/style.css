@@ -1,6 +1,7 @@
 body {
     width: 100%;
-    background-color: #343434;
+    background: url(./img/batman.jpeg);
+    background-size: 135%;
     box-sizing: border-box;
 }
 
@@ -20,7 +21,7 @@ body {
 
 .slider-slides {
     display: flex;
-    width: 400%;
+    width: 600%;
     transition: transform 0.2s ease;
 }
 
@@ -39,8 +40,8 @@ body {
 }
 .text-texts {
     display: flex;
-    width: 400%;
-    transition: transform 0.2s ease;
+    width: 600%;
+    transition: transform 0.3s ease;
 }
 p {
     width: 100%;
@@ -103,6 +104,12 @@ p {
 #btn-4:checked ~ .slider-inner .slider-slides {
     transform: translate(-5184px);
 }
+#btn-5:checked ~ .slider-inner .slider-slides {
+    transform: translate(-6913px);
+}
+#btn-6:checked ~ .slider-inner .slider-slides {
+    transform: translate(-8634px);
+}
 #btn-1:checked ~ .slider-wrapper .text-inner .text-texts {
     transform: translate(0);
 }
@@ -115,6 +122,12 @@ p {
 #btn-4:checked ~ .slider-wrapper .text-inner .text-texts {
     transform: translate(-900px);
 }
+#btn-5:checked ~ .slider-wrapper .text-inner .text-texts {
+    transform: translate(-1200px);
+}
+#btn-6:checked ~ .slider-wrapper .text-inner .text-texts {
+    transform: translate(-1500px);
+}
 @media screen and (max-width: 767px) {
     .slider {
         height: 310px;
@@ -123,7 +136,7 @@ p {
         flex-direction: column-reverse;
     }
     .slider-slides img {
-        width: 25%;
+        width: 17%;
         height: 200px;
     }
     .slider-controls {
@@ -143,24 +156,36 @@ p {
     
       
     #btn-2:checked ~ .slider-inner .slider-slides {
-        transform: translate(-25%);
+        transform: translate(-17%);
     }
       
     #btn-3:checked ~ .slider-inner .slider-slides {
-        transform: translate(-50%);
+        transform: translate(-34%);
     }
     
     #btn-4:checked ~ .slider-inner .slider-slides {
-        transform: translate(-75%);
+        transform: translate(-51%);
+    }
+    #btn-5:checked ~ .slider-inner .slider-slides {
+        transform: translate(-68%);
+    }
+    #btn-6:checked ~ .slider-inner .slider-slides {
+        transform: translate(-85%);
     }
     
     #btn-2:checked ~ .slider-wrapper .text-inner .text-texts {
-        transform: translate(-25%);
+        transform: translate(-16%);
     }
     #btn-3:checked ~ .slider-wrapper .text-inner .text-texts {
-        transform: translate(-50%);
+        transform: translate(-33%);
     }
     #btn-4:checked ~ .slider-wrapper .text-inner .text-texts {
-        transform: translate(-75%);
+        transform: translate(-49%);
+    }
+    #btn-5:checked ~ .slider-wrapper .text-inner .text-texts {
+        transform: translate(-65%);
+    }
+    #btn-6:checked ~ .slider-wrapper .text-inner .text-texts {
+        transform: translate(-83%);
     }
 }
