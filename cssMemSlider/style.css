@@ -35,7 +35,7 @@ body {
 }
 .text-inner {
     overflow: hidden;
-    width: 300px;
+    width: 17.5%;
 }
 .text-texts {
     display: flex;
@@ -43,7 +43,7 @@ body {
     transition: transform 0.2s ease;
 }
 p {
-    width: 300px;
+    width: 100%;
     font-size: 32px;
     margin: 0;
     color: white;
@@ -114,4 +114,53 @@ p {
 }
 #btn-4:checked ~ .slider-wrapper .text-inner .text-texts {
     transform: translate(-900px);
+}
+@media screen and (max-width: 767px) {
+    .slider {
+        height: 310px;
+    }
+    .slider-wrapper {
+        flex-direction: column-reverse;
+    }
+    .slider-slides img {
+        width: 25%;
+        height: 200px;
+    }
+    .slider-controls {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .text-inner {
+        width: 30%;
+    }
+    p {
+        font-size: 1em;
+    }
+    .slider-controls label {
+        width: 10px;
+        height: 10px;
+    }
+    
+      
+    #btn-2:checked ~ .slider-inner .slider-slides {
+        transform: translate(-25%);
+    }
+      
+    #btn-3:checked ~ .slider-inner .slider-slides {
+        transform: translate(-50%);
+    }
+    
+    #btn-4:checked ~ .slider-inner .slider-slides {
+        transform: translate(-75%);
+    }
+    
+    #btn-2:checked ~ .slider-wrapper .text-inner .text-texts {
+        transform: translate(-25%);
+    }
+    #btn-3:checked ~ .slider-wrapper .text-inner .text-texts {
+        transform: translate(-50%);
+    }
+    #btn-4:checked ~ .slider-wrapper .text-inner .text-texts {
+        transform: translate(-75%);
+    }
 }
