@@ -52,7 +52,6 @@ p {
 .slider input[type="radio"] {
     display: none;
 }
-  
 .slider-controls {
     margin-bottom: 10px;
     text-align: right;
@@ -84,7 +83,9 @@ p {
 #btn-1:checked ~ .slider-wrapper .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-wrapper .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-wrapper .slider-controls label[for="btn-3"],
-#btn-4:checked ~ .slider-wrapper .slider-controls label[for="btn-4"] {
+#btn-4:checked ~ .slider-wrapper .slider-controls label[for="btn-4"],
+#btn-5:checked ~ .slider-wrapper .slider-controls label[for="btn-5"],
+#btn-6:checked ~ .slider-wrapper .slider-controls label[for="btn-6"] {
     background-color: #343434;
 }
   
